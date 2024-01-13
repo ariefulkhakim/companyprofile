@@ -1,0 +1,210 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+/* GLOBAL CSS */
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVIGATION CSS */
+.navbar-custom {
+    padding: 20px 0px !important;
+    background-color: #00509d;
+    color: #fff !important;
+}
+
+.navbar-custom .navbar-brand {
+    color: #fff;
+    font-family: 'Lemon', serif;
+}
+ 
+.navbar-custom .navbar-nav {
+    justify-content: end;
+    width: 100%;
+}
+
+.navbar-custom .navbar-nav .nav-item {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.navbar-custom .navbar-nav .nav-item a.nav-link {
+    color: #fff;
+}
+
+/* HERO CSS */
+#hero {
+    padding: 30px 0px 30px 0px;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-hero {
+    padding: 10px 40px !important;
+}
+
+.hero-img {
+    width: 500px;
+    height: 600px;
+}
+
+/* ABOUT ME CSS */
+#about-me {
+    padding: 30px 0px;
+}
+.about-me-img {
+    width: 400px;
+    height: 500px;
+}
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.about-me-content p {
+    color: #00509d;
+    font-weight: 700;
+}
+.about-me-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.about-me-content h4 {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.about-me-content .about-me-text {
+    color: #333;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+/* SERVICE CSS */
+#service {
+    padding: 30px 0px;
+}
+
+.service-title {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.service-title h1 {
+    border-bottom: 2px solid #333;
+    width: 20%;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.service-content {
+    background-color: #e8e9eb;
+    padding: 30px;
+    border-radius: 20px;
+}
+.service-content-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.service-content-text h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service-content-text p {
+    font-weight: 300;
+    line-height: 26px;
+}
+
+/* CTA CSS */
+#cta {
+    position: relative;
+    padding: 80px 0px;
+    background-image: url("/assets/images/bg-overlay.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#cta::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .8;
+}
+
+.cta-content {
+    text-align: center;
+    z-index: 9999;
+    position: relative;
+}
+
+.cta-content h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+/* RESPONSIVE CSS */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .hero-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-me-img {
+        width: 100px;
+        height: 100px;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .hero-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-me-img {
+        width: 200px;
+        height: 200px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
